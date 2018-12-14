@@ -29,6 +29,8 @@ enum eTemperatureState
 
 /* Constants */
 
+static const uint8_t RELAY_PIN = 2;
+
 /* Local Variables */
 
 static Thermistor * s_pThermistor;
@@ -37,8 +39,6 @@ static AdafruitNeoPixelADL * s_pNeoPixels;
 static IntegerParam * s_pTargetTemperature;
 static IntegerParam * s_pTargetRange;
 static IntegerParam * s_pTimerPeriod;
-
-static eTemperatureState s_eCurrentTemperatureState;
 
 static ADLOneShotTimer s_temperature_timer(3000);
 static bool s_game_won = false;
@@ -145,6 +145,9 @@ void adl_custom_setup(DeviceBase * pdevices[], int ndevices, ParameterBase * ppa
         s_pTargetTemperature->get(),
         s_pTargetRange->get()
     );
+
+    pinMode(RELAY_PIN, OUTPUT);
+    digitalWrite(RELAY_PIN, LOW);
 }
 
 void adl_custom_loop(DeviceBase * pdevices[], int ndevices, ParameterBase * pparams[], int nparams)
@@ -155,5 +158,9 @@ void adl_custom_loop(DeviceBase * pdevices[], int ndevices, ParameterBase * ppar
     {
         game_task.run();
         log_task.run();
+    }
+    else
+    {
+        digitalWrite(RELAY_PIN, HIGH);
     }
 }

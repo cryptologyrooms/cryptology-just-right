@@ -14,7 +14,7 @@
             <setting id="beta" value="3977"/>
         </device>
         <device name="NeoPixels" type="Adafruit NeoPixel">
-            <setting id="pin" value="11"/>
+            <setting id="pin" value="5"/>
             <setting id="npixels" value="3"/>
         </device>
     </devices>

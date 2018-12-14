@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"digi",
+				"digitalWrite\tArduino digitalWrite"
+			],
+			[
 				"s_p",
 				"s_pTargetTemperature"
 			],
@@ -510,28 +514,42 @@
 			[
 				"cou",
 				"course_names"
-			],
-			[
-				"cate",
-				"category"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "/home/james/Arduino/libraries/TLC5973/TLC5973.cpp",
+			"file": "custom-code.cpp",
 			"settings":
 			{
-				"buffer_size": 1984,
+				"buffer_size": 4250,
+				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "custom-code.cpp",
+			"file": "app/adl-logging.cpp",
 			"settings":
 			{
-				"buffer_size": 4094,
+				"buffer_size": 1522,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/app.ino",
+			"settings":
+			{
+				"buffer_size": 3520,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app.xml",
+			"settings":
+			{
+				"buffer_size": 1403,
+				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
 		}
@@ -576,10 +594,15 @@
 	},
 	"expanded_folders":
 	[
-		"/home/james/code/cryptology/cryptology-justright"
+		"/home/james/code/cryptology/cryptology-just-right",
+		"/home/james/code/cryptology/cryptology-just-right/app"
 	],
 	"file_history":
 	[
+		"/home/james/code/cryptology/cryptology-just-right/app/adl.cpp",
+		"/home/james/code/cryptology/cryptology-just-right/app/adl-nv-eeprom.cpp",
+		"/home/james/code/cryptology/cryptology-just-right/app/adl-bsp.cpp",
+		"/home/james/Arduino/libraries/TLC5973/TLC5973.cpp",
 		"/home/james/code/cryptology/cryptology-justright/app.xml",
 		"/home/james/code/cryptology/cryptology-justright/custom-code.cpp",
 		"/home/james/code/cryptology/cryptology-justright/app/integer-param.cpp",
@@ -703,11 +726,7 @@
 		"/home/james/code/adl/adl_arduino_cli.py",
 		"/home/james/code/adl/adl/devices/__init__.py",
 		"/home/james/code/adl/adl/adl_code/unittest/adl-util-numeric-range.unittest.cpp",
-		"/home/james/Documents/Electronics/Projects/kypdr/current-revision/key-circuit.sch",
-		"/home/james/Documents/Electronics/kicad-libraries/my-github/packages/vishay-opto.pretty/TCRT5000.kicad_mod",
-		"/home/james/Documents/Electronics/kicad-libraries/my-github/packages/vishay-opto.pretty/VO615A-xX009T.kicad_mod",
-		"/home/james/code/adl/adl/devices/timed-onoff.device-plugin/timed-onoff.h",
-		"/home/james/code/adl/adl/devices/timed-onoff.device-plugin/timed-onoff.cpp"
+		"/home/james/Documents/Electronics/Projects/kypdr/current-revision/key-circuit.sch"
 	],
 	"find":
 	{
@@ -908,57 +927,24 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "/home/james/Arduino/libraries/TLC5973/TLC5973.cpp",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1984,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								201,
-								201
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/User/Stino/Arduino.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 468.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
 					"file": "custom-code.cpp",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4094,
+						"buffer_size": 4250,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								603,
+								603
 							]
 						],
 						"settings":
@@ -971,10 +957,109 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 299.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/adl-logging.cpp",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1522,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1275,
+								1275
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/User/Stino/Arduino.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 390.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/app.ino",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3520,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2619,
+								2619
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/User/Stino/Arduino.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2061.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app.xml",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1403,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								611,
+								611
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/XML/XML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
 					"type": "text"
 				}
 			]

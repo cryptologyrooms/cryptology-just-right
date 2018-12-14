@@ -16,7 +16,7 @@
 
 /*
 app
-Created on 2018-11-08
+Created on 2018-12-13
 By the Arduino Description Language tool.
  
 
@@ -47,6 +47,8 @@ By the Arduino Description Language tool.
 
 #include "adafruit-neopixel-adl.h"
 
+#include "rgb-param.h"
+
 
 
 #include "integer-param.h"
@@ -55,7 +57,7 @@ By the Arduino Description Language tool.
 
 static Thermistor s_thermistor = Thermistor(A7, 10000, 3977, 8200, FIXED_PULLUP);
 
-static AdafruitNeoPixelADL s_neopixels = AdafruitNeoPixelADL(11, 3, NEO_GRB + NEO_KHZ800);
+static AdafruitNeoPixelADL s_neopixels = AdafruitNeoPixelADL(5, 3, NEO_GRB + NEO_KHZ800);
 
 
 static DeviceBase * s_devices[] = 
